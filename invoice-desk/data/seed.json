@@ -1,0 +1,109 @@
+{
+  "company": {
+    "name": "Northwind Retail Pvt Ltd",
+    "gstin": "29AAACN4821K1ZB",
+    "state": "29",
+    "stateName": "Karnataka",
+    "address": "4th Floor, Prestige Meridian, MG Road, Bengaluru 560001"
+  },
+  "policy": {
+    "linePriceTolerancePct": 2.0,
+    "totalToleranceAbs": 100,
+    "autoApproveLimit": 500000,
+    "maxInvoiceAgeDays": 180,
+    "possibleDuplicateWindowDays": 15,
+    "poInferenceMinScore": 0.6,
+    "minExtractionConfidence": 0.75
+  },
+  "vendors": [
+    {
+      "id": "V-1001", "name": "Apex Office Supplies Pvt Ltd", "aliases": ["Apex Office Supplies", "Apex Office"],
+      "gstin": "29AAHCA7731M1Z6", "state": "29", "stateName": "Karnataka", "status": "approved", "paymentTermsDays": 30,
+      "category": "Office supplies",
+      "bank": { "name": "HDFC Bank", "account": "50200034561290", "ifsc": "HDFC0000523" },
+      "contact": { "name": "Priya Nair", "phone": "+91 80 4110 2231", "email": "accounts@apexoffice.example" }
+    },
+    {
+      "id": "V-1002", "name": "Deccan Packaging Industries", "aliases": ["Deccan Packaging"],
+      "gstin": "36AAFFD5512Q1Z5", "state": "36", "stateName": "Telangana", "status": "approved", "paymentTermsDays": 45,
+      "category": "Packaging material",
+      "bank": { "name": "State Bank of India", "account": "39012345678", "ifsc": "SBIN0020156" },
+      "contact": { "name": "K. Srinivas Rao", "phone": "+91 40 2765 8890", "email": "billing@deccanpack.example" }
+    },
+    {
+      "id": "V-1003", "name": "BlueLine Logistics LLP", "aliases": ["BlueLine Logistics", "Blue Line Logistics"],
+      "gstin": "27AAKFB3390C1ZM", "state": "27", "stateName": "Maharashtra", "status": "approved", "paymentTermsDays": 30,
+      "category": "Freight & logistics",
+      "bank": { "name": "Axis Bank", "account": "921020034455667", "ifsc": "UTIB0000123" },
+      "contact": { "name": "Amit Kulkarni", "phone": "+91 22 2851 4470", "email": "ar@bluelinelogistics.example" }
+    },
+    {
+      "id": "V-1004", "name": "Cloudnest IT Services Pvt Ltd", "aliases": ["Cloudnest IT Services", "Cloudnest"],
+      "gstin": "29AAGCC6619P1ZY", "state": "29", "stateName": "Karnataka", "status": "approved", "paymentTermsDays": 15,
+      "category": "IT services",
+      "bank": { "name": "Kotak Mahindra Bank", "account": "7412589630", "ifsc": "KKBK0008061" },
+      "contact": { "name": "Rahul Menon", "phone": "+91 80 4718 3300", "email": "finance@cloudnest.example" }
+    },
+    {
+      "id": "V-1005", "name": "Evergreen Facility Management Pvt Ltd", "aliases": ["Evergreen Facility Management", "Evergreen FM"],
+      "gstin": "29AAECE2284L1Z9", "state": "29", "stateName": "Karnataka", "status": "approved", "paymentTermsDays": 30,
+      "category": "Facility services",
+      "bank": { "name": "HDFC Bank", "account": "50200012345678", "ifsc": "HDFC0001234" },
+      "contact": { "name": "Ramesh Iyer", "phone": "+91 80 4123 7788", "email": "accounts@evergreenfm.example" }
+    }
+  ],
+  "pos": [
+    { "po": "4500001842", "vendorId": "V-1001", "date": "2026-10-28", "type": "goods", "status": "open", "title": "Office stationery – Q4 replenishment",
+      "lines": [
+        { "line": 10, "desc": "A4 copier paper 75 GSM (ream of 500)", "qty": 200, "uom": "ream", "price": 265.00, "taxRate": 18 },
+        { "line": 20, "desc": "Toner cartridge HP 88A", "qty": 12, "uom": "pc", "price": 3450.00, "taxRate": 18 },
+        { "line": 30, "desc": "Whiteboard markers (box of 10)", "qty": 30, "uom": "box", "price": 410.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001966", "vendorId": "V-1001", "date": "2026-11-03", "type": "goods", "status": "open", "title": "Pantry supplies – November",
+      "lines": [
+        { "line": 10, "desc": "Tea bags (pack of 100)", "qty": 40, "uom": "pack", "price": 210.00, "taxRate": 18 },
+        { "line": 20, "desc": "Filter coffee powder 500 g", "qty": 25, "uom": "pack", "price": 540.00, "taxRate": 18 },
+        { "line": 30, "desc": "Paper cups 150 ml (pack of 50)", "qty": 100, "uom": "pack", "price": 85.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001907", "vendorId": "V-1002", "date": "2026-10-02", "type": "goods", "status": "open", "title": "Corrugated boxes – festive season",
+      "lines": [
+        { "line": 10, "desc": "5-ply corrugated box 18x12x12 in", "qty": 10000, "uom": "pc", "price": 42.00, "taxRate": 18 },
+        { "line": 20, "desc": "BOPP packing tape 48 mm x 65 m", "qty": 1000, "uom": "roll", "price": 38.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001933", "vendorId": "V-1003", "date": "2026-10-20", "type": "services", "status": "open", "title": "Inbound freight Bhiwandi to Bengaluru DC",
+      "lines": [
+        { "line": 10, "desc": "FTL freight Bhiwandi to Bengaluru, 32 ft MXL", "qty": 4, "uom": "trip", "price": 48500.00, "taxRate": 18 },
+        { "line": 20, "desc": "Loading and unloading charges", "qty": 4, "uom": "trip", "price": 2500.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001871", "vendorId": "V-1003", "date": "2026-10-06", "type": "services", "status": "open", "title": "Freight Bhiwandi to Chennai DC",
+      "lines": [
+        { "line": 10, "desc": "FTL freight Bhiwandi to Chennai, 24 ft", "qty": 6, "uom": "trip", "price": 39000.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001810", "vendorId": "V-1004", "date": "2026-10-01", "type": "services", "status": "open", "title": "Managed cloud support – October 2026",
+      "lines": [
+        { "line": 10, "desc": "Managed cloud support – October 2026", "qty": 1, "uom": "month", "price": 200000.00, "taxRate": 18 }
+      ] },
+    { "po": "4500001950", "vendorId": "V-1005", "date": "2026-11-01", "type": "services", "status": "open", "title": "Facility services – November 2026",
+      "lines": [
+        { "line": 10, "desc": "Housekeeping services – November 2026", "qty": 1, "uom": "month", "price": 185000.00, "taxRate": 18 },
+        { "line": 20, "desc": "Pantry consumables replenishment", "qty": 1, "uom": "lot", "price": 12500.00, "taxRate": 18 }
+      ] }
+  ],
+  "receipts": [
+    { "id": "GRN-50017731", "po": "4500001842", "date": "2026-11-08", "kind": "GRN", "lines": [ { "line": 10, "qty": 200 }, { "line": 20, "qty": 12 }, { "line": 30, "qty": 30 } ] },
+    { "id": "GRN-50017802", "po": "4500001966", "date": "2026-11-09", "kind": "GRN", "lines": [ { "line": 10, "qty": 40 }, { "line": 20, "qty": 25 }, { "line": 30, "qty": 100 } ] },
+    { "id": "GRN-50017420", "po": "4500001907", "date": "2026-10-16", "kind": "GRN", "lines": [ { "line": 10, "qty": 6000 }, { "line": 20, "qty": 1000 } ] },
+    { "id": "GRN-50017795", "po": "4500001907", "date": "2026-11-11", "kind": "GRN", "lines": [ { "line": 10, "qty": 2500 } ] },
+    { "id": "SES-70002214", "po": "4500001933", "date": "2026-11-13", "kind": "Service entry", "lines": [ { "line": 10, "qty": 4 }, { "line": 20, "qty": 4 } ] },
+    { "id": "SES-70002120", "po": "4500001871", "date": "2026-10-30", "kind": "Service entry", "lines": [ { "line": 10, "qty": 2 } ] },
+    { "id": "SES-70002067", "po": "4500001810", "date": "2026-10-31", "kind": "Service entry", "lines": [ { "line": 10, "qty": 1 } ] },
+    { "id": "SES-70002290", "po": "4500001950", "date": "2026-11-15", "kind": "Service entry", "lines": [ { "line": 10, "qty": 1 }, { "line": 20, "qty": 1 } ] }
+  ],
+  "invoiceHistory": [
+    { "id": "AP-26-00871", "vendorId": "V-1001", "invoiceNo": "AOS/2026-27/0131", "invoiceDate": "2026-09-22", "po": "4500001790", "subtotal": 64200.00, "tax": 11556.00, "total": 75756.00, "status": "Paid", "postedOn": "2026-09-25", "lines": [] },
+    { "id": "AP-26-00912", "vendorId": "V-1002", "invoiceNo": "DPI/0921", "invoiceDate": "2026-10-18", "po": "4500001907", "subtotal": 290000.00, "tax": 52200.00, "total": 342200.00, "status": "Posted", "postedOn": "2026-10-20",
+      "lines": [ { "poLine": 10, "qty": 6000 }, { "poLine": 20, "qty": 1000 } ] },
+    { "id": "AP-26-00958", "vendorId": "V-1004", "invoiceNo": "CN/2026/0412", "invoiceDate": "2026-10-31", "po": "4500001810", "subtotal": 200000.00, "tax": 36000.00, "total": 236000.00, "status": "Paid", "postedOn": "2026-11-03",
+      "lines": [ { "poLine": 10, "qty": 1 } ] }
+  ]
+}
